@@ -21,3 +21,7 @@ Use the directive by specifying an 'upwards-scroll' attribute on an element
 ```html
 <div upwards-scoll="myFunction()"></div>
 ```
+
+Demo
+----
+[demo](http://htmlpreview.github.io/?https://github.com/nclsptrs/AngularUpwardsScroll/blob/master/demo.html)
