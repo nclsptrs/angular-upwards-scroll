@@ -24,4 +24,4 @@ Use the directive by specifying an 'upwards-scroll' attribute on an element
 
 Demo
 ----
-[demo](http://htmlpreview.github.io/?https://github.com/nclsptrs/AngularUpwardsScroll/blob/master/demo.html)
+[Simple demo](http://htmlpreview.github.io/?https://github.com/nclsptrs/AngularUpwardsScroll/blob/master/demo.html)
