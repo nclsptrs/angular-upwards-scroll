@@ -4,7 +4,7 @@ Angular Upwards Scroll
 Usage
 -----
 
-Include the script tag after the jQuery and AngularJS script tag (upwardsScroll requires jQuery to work)
+Include the script tag after the jQuery and AngularJS script tag (upwards scroll requires jQuery to work)
 
 ```html
 <script type="text/javascript" src="jquery.min.js"></script>
