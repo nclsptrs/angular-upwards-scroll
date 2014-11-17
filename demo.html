@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html id="ng-app" data-ng-app="myApp">
+	<head>
+		<title>Angular App</title>
+        <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+        <script src="upwards-scroll.min.js"></script>
+        <style>
+            .upwards-scroll-container {
+                height: 300px;
+                background: #E5E5E5;
+                overflow-y: scroll;
+                margin: 25px;
+            }
+        </style>
+	</head>
+	<body>
+
+        <div data-ng-controller="MyController as vm">
+            <h2>Angular Upwards Scroll</h2>
+
+            <div class="upwards-scroll-container" data-upwards-scoll="vm.LoadMore()">
+                <ul>
+                    <li data-ng-repeat="i in vm.Items">{{i.text}}</li>
+                </ul>
+            </div>
+        </div>
+
+        <script>
+            (function() {
+                'use strict';
+
+                angular.module('myApp', ['upwards-scroll']);
+
+                angular.module('myApp').controller('MyController', function($scope) {
+                    var vm = this;
+                    vm.Items = [];
+                    vm.LoadMore = function() {
+                        for (var i = 0; i < limit; i++) {
+                            vm.Items.unshift( { text: counter } );
+                            counter++;
+                        }
+                    };
+
+                    var counter = 1;
+                    var limit = 50;
+
+                    vm.LoadMore();
+                });
+
+            })();
+        </script>
+
+    </body>
+
+</html>
